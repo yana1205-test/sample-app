@@ -13,6 +13,8 @@ builds:
     goarch: ppc64le
   env:
   - CGO_ENABLED=0
+release:
+  target_commitish: "{{ .Commit }}"
 brews:
   - name: yana1205-test-sample-app
     homepage: "https://github.com/yana1205-test/sample-app"
@@ -20,6 +22,6 @@ brews:
     repository:
       owner: yana1205-test
       name: sample-app
-      branch: brew
+      branch: main
       pull_request:
         enabled: false
