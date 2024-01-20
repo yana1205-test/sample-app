@@ -35,3 +35,5 @@ dist
 
 # ignore output by test
 /**/_test
+
+/work
