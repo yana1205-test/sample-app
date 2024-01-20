@@ -5,20 +5,20 @@
 class Yana1205TestSampleApp < Formula
   desc "sample app for my study"
   homepage "https://github.com/yana1205-test/sample-app"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.7/sample-app_0.0.7_darwin_arm64.tar.gz"
-      sha256 "b2dff62de3e6af1b3cf0f602538f9e63a926ab74aee474c3874d20ca00f19a9b"
+      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.8/sample-app_0.0.8_darwin_arm64.tar.gz"
+      sha256 "23f3ace59896c38bd6126f06a2043b9dfad8c7ad5bd18998151bb5eea72ee293"
 
       def install
         bin.install "bin/yana1205-test-sample-app"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.7/sample-app_0.0.7_darwin_amd64.tar.gz"
-      sha256 "33743b7f02ecf523df0d667f89bad0db83a195eaf6170da1fd29b98397b92fdb"
+      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.8/sample-app_0.0.8_darwin_amd64.tar.gz"
+      sha256 "421ad8f39b22a6096daf19a11dc0b31d78e2499adfd471a6e20d446ba7e4e7ee"
 
       def install
         bin.install "bin/yana1205-test-sample-app"
@@ -28,16 +28,16 @@ class Yana1205TestSampleApp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.7/sample-app_0.0.7_linux_arm64.tar.gz"
-      sha256 "7995626fabf63f43c5015a2e50154e855c901e87b31ac74f64a93cb4ce86b044"
+      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.8/sample-app_0.0.8_linux_arm64.tar.gz"
+      sha256 "01244e7fd0c5c1075518d27590969eb2b4a529b761dd45521cfd74e3b8554f10"
 
       def install
         bin.install "bin/yana1205-test-sample-app"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.7/sample-app_0.0.7_linux_amd64.tar.gz"
-      sha256 "b6578bcea7b6f3d9e7d1fe21e5302dec2e3d335b9729438dd4b95fa38191b222"
+      url "https://github.com/yana1205-test/sample-app/releases/download/v0.0.8/sample-app_0.0.8_linux_amd64.tar.gz"
+      sha256 "725bb81e505afe654cc06368acacd5906bfa36bad32f2c5dda63285cb4229a28"
 
       def install
         bin.install "bin/yana1205-test-sample-app"
