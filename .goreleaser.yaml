@@ -1,0 +1,28 @@
+builds:
+- id: yana1205-test-sample-app
+  main: ./cmd
+  binary: bin/yana1205-test-sample-app
+  goos:
+  - linux
+  - darwin
+  goarch:
+  - amd64
+  - arm64
+  ignore:
+  - goos: darwin
+    goarch: ppc64le
+  env:
+  - CGO_ENABLED=0
+# brews:
+#   - name: kubeflex
+#     homepage: "https://github.com/kubestellar/kubeflex"
+#     tap:
+#       owner: kubestellar
+#       name: kubeflex
+#       branch: brew
+#       pull_request:
+#         enabled: false
+#     commit_author:
+#       name: "{{ .Env.USER }}"
+#       email: "{{ .Env.EMAIL }}"  
+
