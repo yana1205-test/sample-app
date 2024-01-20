@@ -13,16 +13,13 @@ builds:
     goarch: ppc64le
   env:
   - CGO_ENABLED=0
-# brews:
-#   - name: kubeflex
-#     homepage: "https://github.com/kubestellar/kubeflex"
-#     tap:
-#       owner: kubestellar
-#       name: kubeflex
-#       branch: brew
-#       pull_request:
-#         enabled: false
-#     commit_author:
-#       name: "{{ .Env.USER }}"
-#       email: "{{ .Env.EMAIL }}"  
-
+brews:
+  - name: yana1205-test-sample-app
+    homepage: "https://github.com/yana1205-test/sample-app"
+    description: "sample app for my study"
+    repository:
+      owner: yana1205-test
+      name: sample-app
+      branch: main
+      pull_request:
+        enabled: false
