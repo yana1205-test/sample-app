@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/yana1205-test/sample-app/cmd/hello"
+	"github.com/yana1205-test/sample-app/go/cmd/hello"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/yana1205-test/sample-app
+module github.com/yana1205-test/sample-app/go
 
 go 1.21.4
 

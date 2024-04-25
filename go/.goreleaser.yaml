@@ -15,7 +15,7 @@ builds:
   - CGO_ENABLED=0
 brews:
   - name: yana1205-test-sample-app
-    homepage: "https://github.com/yana1205-test/sample-app"
+    homepage: "https://github.com/yana1205-test/sample-app/go"
     description: "sample app for my study"
     repository:
       owner: yana1205-test
