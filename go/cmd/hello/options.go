@@ -4,7 +4,7 @@ import (
 	"github.com/spf13/pflag"
 )
 
-var Message string = "default"
+var Message string
 
 func AddFlags(fs *pflag.FlagSet) {
 	fs.StringVarP(&Message, "message", "m", "hello world!", "output message")
