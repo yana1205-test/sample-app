@@ -22,3 +22,5 @@ jobs:
     - name: Release
       run: |
         gh release view
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
