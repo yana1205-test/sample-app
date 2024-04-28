@@ -6,6 +6,6 @@ import (
 )
 
 func Run() error {
-	fmt.Fprintln(os.Stdout, "hi", Message)
+	fmt.Fprintln(os.Stdout, "hi2", Message)
 	return nil
 }
