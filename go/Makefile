@@ -20,6 +20,7 @@ artifact: build
 release: artifact
 	@(gh release --repo yana1205-test/sample-app view $(TAG) ;\
 	if [[ "$$?" != "0" ]];then \
+		echo create release $(TAG) ;\
 		gh release --repo yana1205-test/sample-app create $(TAG) --generate-notes ;\
 	fi)
 	gh release --repo yana1205-test/sample-app upload $(TAG) ./dist/artifacts/sample-app_$(VERSIONED_PREFIX).*
