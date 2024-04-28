@@ -18,5 +18,8 @@ artifact: build
 
 # echo $PAT | gh auth login --with-token -h github.com
 release: artifact
-	-gh release --repo yana1205-test/sample-app create $(TAG) --generate-notes
-	-gh release --repo yana1205-test/sample-app upload $(TAG) ./dist/artifacts/sample-app_$(VERSIONED_PREFIX).*
+	@(gh release --repo yana1205-test/sample-app view $(TAG) ;\
+	if [[ "$$?" != "0" ]];then \
+		gh release --repo yana1205-test/sample-app create $(TAG) --generate-notes ;\
+	fi)
+	gh release --repo yana1205-test/sample-app upload $(TAG) ./dist/artifacts/sample-app_$(VERSIONED_PREFIX).*
