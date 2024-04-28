@@ -1,3 +1,4 @@
+SHELL=/bin/bash
 GOOS ?= darwin
 GOARCH ?= arm64
 TAG := $(shell git describe --tags --abbrev=0)
