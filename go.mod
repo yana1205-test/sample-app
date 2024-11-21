@@ -1,3 +1,4 @@
+// Deprecated: Use github.com/yana1205-test/sample-app/go instead.
 module github.com/yana1205-test/sample-app
 
 go 1.21.4
